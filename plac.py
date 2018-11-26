@@ -76,6 +76,10 @@ def change_record():
     else:
         return '不存在'
 
+# def phonebook_save():
+#     with open('D:/phone.dat','w') as f:
+
+
 if __name__=='__main__':
     while True:
         menu="""1.添加，2.查找，3.删除，4.修改，5.退出"""
@@ -86,7 +90,8 @@ if __name__=='__main__':
         elif choose=='2':
             print(query_record())
             print('查询结果：')
-        elif choose=='3':print('查询结果：')
+        elif choose=='3':
+            print('查询结果：')
             print(delete_record())
         elif choose=='4':
             print(change_record())
